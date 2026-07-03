@@ -1,0 +1,388 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero{
+    height: calc(100vh - 84.06px);
+    background-image: url(../img/hero.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero p{
+    text-align: center;
+    color: red;
+    font-size: 20px;
+    
+}
+
+.hero a{
+    width: 100px;
+    height: 50px;
+    background-color: blueviolet;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+body{
+    background-color: #444444;
+}
+
+.hero h1{
+    color: red;
+    font-size: 40px;
+    border: 2px solid red;
+    padding: 15px;
+}
+
+
+header{
+    background-color: blueviolet;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+header img{
+    width: 100px;
+}
+
+header nav ul{
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li{
+    margin: 10px;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.servicios .contenedor-imagen{
+    position: relative;
+    width: 500px; /* 👈 Axel Igual que el otro div */
+    max-width: 500px; /* Límite opcional en desktop */
+     /* Centrado */
+}
+.servicios .contenedor-imagen .texto-sobre-imagen{
+    position: absolute;
+    bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      text-align: center;
+}
+
+.servicios{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    padding: 50px;
+    
+}
+.servicios div p{
+    font-size: 20px;
+}
+.servicios div h3{
+    font-size: 30px;
+}
+
+.servicios div{
+    width: 50%; /* 👈 Axel Igual que el otro div */
+    text-align: center;
+}
+.servicios img{
+    width: 100%; /* 👈Axel Para que se ajuste al ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+.nosotros div p{
+    font-size: 20px;
+}
+.nosotros div h3{
+    font-size: 30px;
+}
+.nosotros .contenedor-imagen{
+    position: relative;
+    width: 500px; /* 👈 Axel Igual que el otro div */
+    max-width: 500px; /* Límite opcional en desktop */
+     /* Centrado */
+}
+
+.nosotros .contenedor-imagen .texto-sobre-imagen{
+    position: absolute;
+    bottom: 0;
+      left: 0;
+      right: 0;
+      background: rgba(0, 0, 0, 0.6);
+      color: white;
+      padding: 10px;
+      font-family: monospace;
+      font-size: 14px;
+      text-align: center;
+}
+.nosotros{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 50px;
+}
+.nosotros div{
+    width: 50%; /* 👈 Axel Igual que el otro div */
+    text-align: center;
+}
+.nosotros img{
+    width: 100%; /* 👈Axel Para que se ajuste al ancho del contenedor */
+    height: auto;
+    display: block;
+}
+
+
+/* Estilos para la seccion de productos */
+.productos{
+    padding: 20px;
+}
+
+.productos h3{
+    text-align: center;
+    color: red;
+}
+
+.productos .box-productos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.productos .box-productos div img{
+    width: 320px;
+}
+
+.productos .box-productos div{
+    text-align: center;
+    border: 2px solid red;
+    height: 320px;
+}
+.productos .box-productos div {
+    margin-bottom: 10px;
+}
+.contacto .contenedor-mapa{
+    width: 600px;
+}
+
+
+.contacto .contenedor-mapa iframe{
+    width: 100%
+}
+.contacto h3{
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+.contacto .contenedor-contacto{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding-bottom: 10px;
+}
+
+form{
+    background-color: blueviolet;
+    padding: 20px;
+    border: red 2px solid;
+    height: 450px;
+    text-align: center;
+    color: white;
+}
+
+form input{
+    width: 100%;
+    margin-bottom: 5px;
+}
+form textarea{
+    width: 100%;
+    margin-bottom: 5px;
+}
+form .button-container{
+    text-align: center;
+}
+
+#submit{
+    margin-top: 10px;
+}
+ 
+footer{
+    background-color: blueviolet;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; 
+    padding: 10px;
+    border-radius: 8px; 
+}
+
+footer .logo-footer{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+footer ul{ 
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+footer ul li{ 
+    
+}
+
+footer p{
+    text-align: center;
+    margin-bottom: 15px;
+}
+footer img{
+    width: 100px;
+    transition: all 0.3s; 
+}
+footer img:hover{
+    transform: scale(1.2);
+}
+
+.redes-sociales{
+    text-align: center;
+    color: black;
+}  
+.redes-sociales a{
+    text-decoration: none;
+    color: white;
+} 
+
+ .enlaces{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 15px;
+
+}    
+
+.enlaces a{
+    text-decoration: none;
+    color:white
+    
+} 
+
+.boton{
+    background-color: blueviolet;
+    color: white;
+    padding: 5px;
+}
+
+@media screen and (max-width: 550px){
+    .abrir-menu, .cerrar-menu{
+        display: block;
+        border: 0;
+        font-size: 25px;
+        background-color: transparent;
+        cursor: pointer;
+    }
+
+    .abrir-menu{
+        color: black;
+    }
+
+    .cerrar-menu{
+        color: aliceblue;
+    }
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+    }
+    
+    .nav{
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: black;
+        padding: 10px;
+        z-index: 9999;
+    }
+
+    .nav.visible{ /*Axel aca es una combinacion de clases un elemento html tiene dos clases*/
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-list{
+        flex-direction: column;
+        align-items: end;
+    }
+    header .nav .nav-list li a{
+        color: aliceblue;
+    }
+    .nosotros{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        flex-wrap: wrap;
+        
+        
+    }
+    .nosotros > div,
+  .contenedor-imagen {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .servicios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    flex-wrap: wrap;   
+}
+.servicios > div,
+  .contenedor-imagen {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+}

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../css/estilos.css">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <title>Bogui - Contacto</title>
+</head>
+<body>
+    <header>
+        <img src="../img/budin.jpg" alt="logo-pagina">
+        <nav>
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="./nosotros.html">Nosotros</a></li>
+                <li><a href="./contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contacto">
+            <h3 style="color: red;">CONTACTO:</h3>
+            <div class="contenedor-contacto">
+            <div class="contenedor-mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1619353151304!2d-58.41895592477026!3d-34.625347858640005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccbdd9ded8891%3A0xe3fc1307e41d3df0!2sSan%20Juan%20y%20Boedo!5e0!3m2!1ses!2sar!4v1751403426610!5m2!1ses!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+                <form action="../index.html" id="formulario">
+                <h3 id="tituloFormulario">Complete el formulario:</h3>
+                <div>
+                <label for="">Ingrese nombre del producto:</label><input type="text" id="inputNombre">
+            </div>
+            <span id="spanNombre" style="color: red;"></span>
+                <div>
+                <label for="">Ingrese cantidad del producto:</label><input type="text" id="inputStock">
+            </div>
+            <span id="spanStock" style="color: red;"></span>
+                <div>
+                <label for="">Ingrese su correo:</label><input type="email" id="inputCorreo">
+            </div>
+            <span id="spanCorreo" style="color: red;"></span>
+                <div>
+                <label for="">Categoria:</label><select name="" id="select">
+                    <option value="verduleria">Verduleria</option>
+                    <option value="electronica">Electronica</option>
+                    <option value="bebidas">Bebidas</option>
+                </select>
+                </div>
+                <div class="button-container">
+            <button type="submit" id="submit">Enviar</button>
+            <button type="reset">Reset</button>
+          </div>
+            </form>
+            </div>
+            
+        </section>
+    </main>
+
+     <footer>
+        <div class="logo-footer"> 
+        <img src="../img/budin.jpg" alt="logo de pagina">
+    </div>
+        <p style="color: white;">&copy; 2026 - Todos los derechos reservados</p>
+        <ul class="enlaces">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Nosotros</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+        <div class="redes-sociales">
+        <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+        <a href="https://www.facebook.com/" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://x.com/" target="_blank"><i class="bi bi-twitter-x"></i></a>
+        <a href="https://www.whatsapp.com/" target="_blank"><i class="bi bi-whatsapp"></i></a>
+    </div>
+    </footer>
+    
+
+    <script src="../js/contacto.js"></script>
+</body>
+</html>
