@@ -76,9 +76,24 @@ header nav ul li{
 
 header nav ul li a{
     text-decoration: none;
-    color:white;
+    color:white !important;
+}
+header .nav .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+header .nav .nav-list li a{
+    text-decoration: none;
+    color: black;
+}
+.servicios div h3, p{
+    color: white;
 }
 
+.nosotros div h3,p{
+    color: white;
+}
 .servicios .contenedor-imagen{
     position: relative;
     width: 500px; /* 👈 Axel Igual que el otro div */
@@ -188,6 +203,11 @@ header nav ul li a{
     width: 320px;
 }
 
+.productos .box-productos div a{
+    display: inline-block;
+    margin-top: 1px;
+}
+
 .productos .box-productos div{
     text-align: center;
     border: 2px solid red;
@@ -198,6 +218,7 @@ header nav ul li a{
 }
 .contacto .contenedor-mapa{
     width: 600px;
+    padding: 20px;
 }
 
 
@@ -266,9 +287,7 @@ footer ul{
     flex-wrap: wrap;
     gap: 20px;
 }
-footer ul li{ 
-    
-}
+
 
 footer p{
     text-align: center;
@@ -309,6 +328,10 @@ footer img:hover{
     background-color: blueviolet;
     color: white;
     padding: 5px;
+}
+
+.abrir-menu, .cerrar-menu{
+    display: none;
 }
 
 @media screen and (max-width: 550px){

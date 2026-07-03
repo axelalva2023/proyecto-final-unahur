@@ -9,6 +9,9 @@ const spanNombre = document.getElementById("spanNombre")
 const spanStock = document.getElementById("spanStock")
 const spanCorreo = document.getElementById("spanCorreo")
 const formulario = document.getElementById("formulario")
+const nav = document.querySelector("#nav")
+const abrir = document.querySelector("#abrir")
+const cerrar = document.querySelector("#cerrar")
 
 //Creamos funciones:
 
@@ -68,5 +71,13 @@ formulario.addEventListener("submit", (e) => {
 select.addEventListener("change", () => {
     cambiarColor()
     nombre.focus()
+})
+
+abrir.addEventListener("click", () =>{
+    nav.classList.add("visible")
+})
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible")
 })
 
