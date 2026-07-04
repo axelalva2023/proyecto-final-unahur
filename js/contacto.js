@@ -60,7 +60,11 @@ function cambiarColor() {
 formulario.addEventListener("submit", (e) => {
     e.preventDefault()
     if(validacion()){
-        alert("Productos registrados correctamente")
+        Swal.fire({
+  title: "Producto registrado correctamente",
+  text: "Gracias por elegirnos!",
+  icon: "success"
+});
         nombre.value = ""
         stock.value = ""
         correo.value = ""

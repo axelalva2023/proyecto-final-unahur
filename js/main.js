@@ -7,6 +7,14 @@ let frase = "Bienvenidos"
 const nav = document.querySelector("#nav")
 const abrir = document.querySelector("#abrir")
 const cerrar = document.querySelector("#cerrar")
+const hero = document.getElementById("hero")
+
+const fondos = ["hero.jpg", "hero2.jpg", "hero3.jpg", "hero4.jpg", "hero5.jpg"]
+
+function cambiarFondo(arr) {
+    let random = Math.floor(Math.random() * arr.length)
+    hero.style.backgroundImage = `url(./img/${arr[random]})`
+}
 
 
 setInterval(()=>{
@@ -25,4 +33,9 @@ abrir.addEventListener("click", () =>{
 
 cerrar.addEventListener("click", () => {
     nav.classList.remove("visible")
+})
+
+window.addEventListener("DOMContentLoaded", (e) =>{
+    e.preventDefault()
+    cambiarFondo(fondos)
 })

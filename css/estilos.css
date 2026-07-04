@@ -201,6 +201,8 @@ header .nav .nav-list li a{
 
 .productos .box-productos div img{
     width: 320px;
+    height: 200px;      
+    object-fit: cover;
 }
 
 .productos .box-productos div a{
